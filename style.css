@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #F3F5FC;
+}
+
+.ladoEsquerdo {
+    margin-top: 10px;
+    margin-left: 10px;    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ladoDireito__com__logo {
+    display: flex;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 48px;
+}
+
+.ladoDireito {    
+    margin-top: 77px;
+    margin-left: 10px;  
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 500px;
+    height: 700px;
+    border-radius: 32px;    
+}
+
+.ladoDireito__mensagens {
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    line-height: 28.8px;
+    color: #343A40;
+}
+
+p {
+
+}
+
+.regras {
+    margin-left: 10px;
+}
+
+.principal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;    
+}
+
+.areaDeTexto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 900px;
+    height:  700px;
+    resize: none;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    border: 1px solid black;
+    margin-left: 150px;
+    size: 32px;
+}
+
+.botoes {    
+    display: flex;
+    align-items: center;
+    margin-top: 885;
+    justify-content: left;
+    gap: 8px;
+    margin-left: 410px;
+}
+
+.botaoCriptografar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #0A3871;
+    border-radius: 24px;
+    text-decoration: none;  
+    padding: 12px;  
+    gap: 8px;
+    width: 170px;
+    height: 50px;
+}
+
+.botaoDescriptografar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #0A3871;
+    border-radius: 24px;
+    text-decoration: none;
+    padding: 12px; 
+    border: 1px solid #0A3871;
+    width: 170px;
+    height: 50px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
