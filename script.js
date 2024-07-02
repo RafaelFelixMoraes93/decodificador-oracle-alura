@@ -9,10 +9,15 @@ function iniciar() {
 
 function criptografar() {
     imagem.style.visibility = "hidden";
-    let iniciop = document.querySelector('h1');
-    iniciop.innerHTML = "";
     let areaDeTexto = document.querySelector('.areaDeTexto');
-    let mensagem = areaDeTexto.value;
+    let mensagem = areaDeTexto.value;    
+        if (/[A-Z]/.test(mensagem) || /[^a-z\s]/.test(mensagem)) {
+            let pElement = document.querySelector('.ladoDireito__mensagens p');
+            pElement.innerHTML = "A mensagem contém letras maiúsculas ou caracteres especiais.";
+            return;
+        }
+    let iniciop = document.querySelector('h1');
+    iniciop.innerHTML = "";    
     let mensagemCriptografada = mensagem.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
     let pElement = document.querySelector('.ladoDireito__mensagens p');
     pElement.innerHTML = mensagemCriptografada;       
@@ -20,10 +25,15 @@ function criptografar() {
 
 function descriptografar() {
     imagem.style.visibility = "hidden";
-    let iniciop = document.querySelector('h1');
-    iniciop.innerHTML = "";
     let areaDeTexto = document.querySelector('.areaDeTexto');
     let mensagemCriptografada = areaDeTexto.value;
+        if (/[A-Z]/.test(mensagemCriptografada) || /[^a-z\s]/.test(mensagemCriptografada)) {
+            let pElement = document.querySelector('.ladoDireito__mensagens p');
+            pElement.innerHTML = "A mensagem contém letras maiúsculas ou caracteres especiais.";
+            return;
+        }
+    let iniciop = document.querySelector('h1');
+    iniciop.innerHTML = "";    
     let mensagemDescriptografada = mensagemCriptografada.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
     let pElement = document.querySelector('.ladoDireito__mensagens p');
     pElement.innerHTML = mensagemDescriptografada;       
